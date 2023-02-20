@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageViewOne: UIImageView!
     @IBOutlet weak var diceImageViewTwo: UIImageView!
     
+    //Metodo que carrega no momento em que o aplicativo e iniciado a primeira vez
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix")
         
     }
 
