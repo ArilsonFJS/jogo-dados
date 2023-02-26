@@ -21,10 +21,17 @@ class ViewController: UIViewController {
     
     @IBAction func btnRolarPressionado(_ sender: UIButton) {
         
-        diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix")
-        //alterando a propriedade de opacidade da imagem
-        diceImageViewOne.alpha = 0.5
-        diceImageViewTwo.image = UIImage(imageLiteralResourceName: "DiceTwo")
+        let imagens: [UIImage] = [
+            UIImage(named: "DiceOne")!,
+            UIImage(named: "DiceTwo")!,
+            UIImage(named: "DiceThree")!,
+            UIImage(named: "DiceFour")!,
+            UIImage(named: "DiceFive")!,
+            UIImage(named: "DiceSix")!
+        ]
+        
+        diceImageViewOne.image = imagens.randomElement()
+        diceImageViewTwo.image = imagens.randomElement()
     }
 }
 
