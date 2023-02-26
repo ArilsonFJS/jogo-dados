@@ -17,18 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix")
-        //alterando a propriedade de opacidade da imagem
-        diceImageViewOne.alpha = 0.5
-        
-        diceImageViewTwo.image = UIImage(imageLiteralResourceName: "DiceTwo")
-        
     }
     
     @IBAction func btnRolarPressionado(_ sender: UIButton) {
         
+        diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix")
+        //alterando a propriedade de opacidade da imagem
+        diceImageViewOne.alpha = 0.5
+        diceImageViewTwo.image = UIImage(imageLiteralResourceName: "DiceTwo")
     }
-    
-
 }
 
