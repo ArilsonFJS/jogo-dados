@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         
         diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix")
         
+        //alterando a propriedade de opacidade da imagem
+        diceImageViewOne.alpha = 0.5
+        
     }
 
 
