@@ -28,8 +28,8 @@ class ViewController: UIViewController {
                                    UIImage(imageLiteralResourceName: "DiceFive"),
                                    UIImage(imageLiteralResourceName: "DiceSix")]
         
-        diceImageViewOne.image = imagens.randomElement()
-        diceImageViewTwo.image = imagens.randomElement()
+        diceImageViewOne.image = imagens[Int.random(in: 0...5)]
+        diceImageViewTwo.image = imagens[Int.random(in: 0...5)]
     }
 }
 
