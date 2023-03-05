@@ -21,14 +21,12 @@ class ViewController: UIViewController {
     
     @IBAction func btnRolarPressionado(_ sender: UIButton) {
         
-        let imagens: [UIImage] = [
-            UIImage(named: "DiceOne")!,
-            UIImage(named: "DiceTwo")!,
-            UIImage(named: "DiceThree")!,
-            UIImage(named: "DiceFour")!,
-            UIImage(named: "DiceFive")!,
-            UIImage(named: "DiceSix")!
-        ]
+        let imagens : [UIImage] = [UIImage(imageLiteralResourceName: "DiceOne"),
+                                   UIImage(imageLiteralResourceName: "DiceTwo"),
+                                   UIImage(imageLiteralResourceName: "DiceThree"),
+                                   UIImage(imageLiteralResourceName: "DiceFour"),
+                                   UIImage(imageLiteralResourceName: "DiceFive"),
+                                   UIImage(imageLiteralResourceName: "DiceSix")]
         
         diceImageViewOne.image = imagens.randomElement()
         diceImageViewTwo.image = imagens.randomElement()
